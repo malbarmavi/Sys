@@ -60,24 +60,25 @@ namespace Sys
           case "motherboard":
             GetInfo(SystemInfo.GetMotherBoard());
             break;
-          case "bois":
+          case "bios":
             GetInfo(SystemInfo.GetBios());
             break;
           case "about":
+            break;
           case "help":
             WriteLine("\n Command                    Alias");
-            WriteLine(" --------------------------------");
-            WriteLine(" os                            ");
-            WriteLine(" users-accounts             ua   ");
-            WriteLine(" system-accounts            sa   ");
-            WriteLine(" cpu                           ");
-            WriteLine(" memory                     mem  ");
-            WriteLine(" disks-drives               dd   ");
-            WriteLine(" disks-partition            dp   ");
-            WriteLine(" logical-disk               ld   ");
-            WriteLine(" motherboard                mb   ");
-            WriteLine(" bois                          ");
-            WriteLine(" about                         \n");
+            WriteLine(" ----------------------------------");
+            WriteLine(" os                                ");
+            WriteLine(" users-accounts               ua   ");
+            WriteLine(" system-accounts              sa   ");
+            WriteLine(" cpu                               ");
+            WriteLine(" memory                       mem  ");
+            WriteLine(" disks-drives                 dd   ");
+            WriteLine(" disks-partition              dp   ");
+            WriteLine(" logical-disk                 ld   ");
+            WriteLine(" motherboard                  mb   ");
+            WriteLine(" bios                              ");
+            WriteLine(" about                           \n");
             break;
           default:
             if (command != "")
