@@ -37,6 +37,9 @@ namespace Sys
           case "system-accounts":
             GetInfo(SystemInfo.GetUserAccounts());
             break;
+          case "groups":
+            GetInfo(SystemInfo.GetUsersGroups());
+            break;
           case "cpu":
             GetInfo(SystemInfo.GetCPU());
             break;
@@ -66,19 +69,22 @@ namespace Sys
           case "about":
             break;
           case "help":
-            WriteLine("\n Command                    Alias");
-            WriteLine(" ----------------------------------");
-            WriteLine(" os                                ");
-            WriteLine(" users-accounts               ua   ");
-            WriteLine(" system-accounts              sa   ");
-            WriteLine(" cpu                               ");
-            WriteLine(" memory                       mem  ");
-            WriteLine(" disks-drives                 dd   ");
-            WriteLine(" disks-partition              dp   ");
-            WriteLine(" logical-disk                 ld   ");
-            WriteLine(" motherboard                  mb   ");
-            WriteLine(" bios                              ");
-            WriteLine(" about                           \n");
+            WriteLine("\n  Command                    Alias");
+            WriteLine("  ----------------------------------");
+            WriteLine("  os                                ");
+            WriteLine("  users-accounts               ua   ");
+            WriteLine("  system-accounts              sa   ");
+            WriteLine("  system-accounts              sa   ");
+            WriteLine("  cpu                               ");
+            WriteLine("  memory                       mem  ");
+            WriteLine("  disks-drives                 dd   ");
+            WriteLine("  disks-partition              dp   ");
+            WriteLine("  logical-disk                 ld   ");
+            WriteLine("  motherboard                  mb   ");
+            WriteLine("  bios                              ");
+            WriteLine("  about                           \n");
+            break;
+          case "exit":
             break;
           default:
             if (command != "")
