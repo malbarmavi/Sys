@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using static System.Console;
 using static Sys.Utility;
 using Helper;
+using Helper.Extenstion;
 namespace Sys
 {
   class Program
   {
     static void Main(string[] args)
     {
+
       string command = string.Empty;
       Title = "Sys";
       WriteLine("Sys console info command version 0.1 beta.\nType help to get the availabel commands.\n");

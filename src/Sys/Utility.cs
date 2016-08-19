@@ -7,7 +7,7 @@ using static System.Console;
 
 namespace Sys
 {
-  using Helper.Extention;
+  using Helper.Extenstion;
   public static class Utility
   {
     public static void GetInfo<T>(List<T> infoList)
