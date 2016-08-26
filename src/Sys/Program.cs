@@ -7,6 +7,7 @@ using static System.Console;
 using static Sys.Utility;
 using Helper;
 using Helper.Extenstion;
+
 namespace Sys
 {
   class Program
@@ -15,6 +16,9 @@ namespace Sys
     {
 
       string command = string.Empty;
+      BackgroundColor = ConsoleColor.White;
+      ForegroundColor = ConsoleColor.Black;
+      Clear();
       Title = "Sys";
       WriteLine("Sys console info command version 0.1 beta.\nType help to get the availabel commands.\n");
       while (command != "exit")
@@ -22,7 +26,7 @@ namespace Sys
         Write(">");
         command = ReadLine();
 
-        switch (command.ToLower())
+        switch (command.ToLower().Trim())
         {
           case "clear":
           case "cls":
@@ -43,7 +47,7 @@ namespace Sys
             GetInfo(SystemInfo.GetUsersGroups());
             break;
           case "cpu":
-            GetInfo(SystemInfo.GetCPU());
+            GetInfo(SystemInfo.GetCpu());
             break;
           case "mem":
           case "memory":

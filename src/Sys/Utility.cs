@@ -24,7 +24,7 @@ namespace Sys
     {
       foreach (var prop in info.GetType().GetProperties())
       {
-        if (prop.GetValue(info).ToString().IsValidString())
+        if (prop.GetValue(info).ToString().IsValid())
         {
           WriteLine($" {FormateMemberName(prop.Name).PadRight(25)}: {prop.GetValue(info).ToString().PadRight(5)}");
         }
