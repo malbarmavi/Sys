@@ -20,7 +20,7 @@ namespace Sys
       WriteLine("");
     }
 
-    public static void GetInfo(object info)
+    public static void GetInfo<T>(T info)
     {
       foreach (var prop in info.GetType().GetProperties())
       {

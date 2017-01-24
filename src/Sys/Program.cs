@@ -16,12 +16,9 @@ namespace Sys
     {
 
       string command = string.Empty;
-      BackgroundColor = ConsoleColor.White;
-      ForegroundColor = ConsoleColor.Black;
       string about = " commands:\n\tos, users - accounts(ua), system - accounts(sa), cpu, memory(mem),\n\tdisks - drives(dd), disks - partition(dp), logical - disk(ld),\n\tmotherboard(mb),bios , about ";
-      Clear();
       Title = "Sys";
-      WriteLine("Sys console info command version 0.1 beta.\nType help to get the availabel commands.\n");
+      WriteLine("Sys console info command version [0.5.1] beta.\nType help to get the availabel commands.\n");
 
       while (command != "exit")
       {
@@ -76,6 +73,7 @@ namespace Sys
             break;
           case "about":
             break;
+          case "?":
           case "help":
             WriteLine(about);
             break;
